@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #0F67B1;
     color: #fff;
     padding: 1rem 0;
 }
@@ -41,7 +42,7 @@ header nav ul li a {
 }
 
 section {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 section#about, section#contact {
@@ -54,9 +55,9 @@ section h2 {
 }
 
 section p {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
+    /* text-align: center; */
+    max-width: 100%;
+    /* margin: 0 auto; */
 }
 
 .project {
@@ -92,15 +93,116 @@ form input, form textarea {
 }
 
 form input[type="submit"] {
-    background: #333;
+    background: #0F67B1;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 footer {
-    background: #333;
+    background: #0F67B1;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
 }
+
+
+
+
+
+
+
+.mainSection{
+    max-width: 1080px;
+    margin:0 auto;
+}
+
+.sectionHeader{
+    background: #0F67B1;
+    font-size: 24px;
+    padding:6px 16px; 
+    color:white;
+    margin-bottom:12px;
+}
+
+.caseStudy{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(530px, 1fr)); /* Adjust minmax value as needed */
+    gap: 20px; /* Adjust the gap between cards as needed */
+}
+
+
+
+
+
+
+
+/* card */
+.card {
+    --bg: #f7f7f8;
+    --hover-bg: #FFE5F4;
+    --hover-text: #E50087;
+    min-width: 540px;
+    text-align: start;
+    background: var(--bg);
+    padding: 1.5em;
+    padding-block: 1.8em;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .card__body {
+    color: #464853;
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+  
+  .card > :not(span) {
+    transition: .3s cubic-bezier(.6,.4,0,1);
+  }
+  
+  .card > strong {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: -.035em;
+  }
+  
+  .card span {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hover-text);
+    border-radius: 5px;
+    font-weight: bold;
+    top: 100%;
+    transition: all .3s cubic-bezier(.6,.4,0,1);
+  }
+  
+  .card:hover span {
+    top: 0;
+    font-size: 1.2em;
+  }
+  
+  .card:hover {
+    background: var(--hover-bg);
+  }
+  
+  .card:hover>div,.card:hover>strong {
+    opacity: 0;
+  }
+
+
+
+
+
