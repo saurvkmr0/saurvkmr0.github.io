@@ -12,6 +12,7 @@ html{
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: rgba(1, 128, 96, 0.15);
 }
 
 .container {
