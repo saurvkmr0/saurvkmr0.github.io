@@ -12,9 +12,9 @@
             <h1>Shopify Portfolio</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#personalInfo">About</a></li>
+                    <li><a href="#objective">Objective</a></li>
+                    <li><a href="#caseStudy">Case Study</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,11 +27,11 @@
             <div class="sectionHeader">Personal Information</div>
             <div style="text-align: left; align-items: start;">
                 <p>Name</p>
-                <p>Saurav Kumar</p>
+                <strong><p>Saurav Kumar</p></strong>
                 <p>USN</p>
-                <p>01FE21BEC365</p>
+                <strong><p>01FE21BEC365</p></strong>
                 <p>University</p>
-                <p>KLE Technological University, Hubballi-31</p>
+                <strong><p>KLE Technological University, Hubballi-31</p></strong>
             </div>
         </section>
         
@@ -39,9 +39,9 @@
             <div class="sectionHeader">Course Details</div>
             <div>
                 <p>Course Name</p>
-                <p>Algorithmic Problem Solving</p>
+                <strong><p>Algorithmic Problem Solving</p></strong>
                 <p>Course Code</p>
-                <p>23ECSE309</p>
+                <strong><p>23ECSE309</p></strong>
             </div>
         </section>
 
@@ -68,7 +68,20 @@
             </div>
         </section>
 
-        <div class="caseStudy">
+        <section id="introduction">
+            <div class="sectionHeader" id="objective">Objectives</div>
+            <div>
+                <p>
+                    • Enhance efficiency and reduce costs in supply chain operations.
+                    <br>
+                    • Develop advanced search algorithms, improve product filtering and sorting options, and offer personalized product recommendations.
+                </p>
+            </div>
+        </section>
+
+        <div class="sectionHeader" id="caseStudy" style="margin:20px 0;">Case Study</div>
+
+        <div class="caseStudy" style="margin-bottom:20px;">
 
             <div class="card">
                 <strong>  Suffix Trees
@@ -76,7 +89,16 @@
                 <div class="card__body">
                     For efficient autocomplete and search suggestions.
                 </div>
-                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/suffixTree.c">Implementation</a></span>
+                <div style="display:flex; justify-content:space-evenly; width:100%; font-weight: 600; font-size: 14px;">
+                    <p>Space Complexity: O(n)</p>
+                    <p>Time Complexity: O(n)</p>
+                </div>
+                <div>
+                    <p>
+                        where m is the length of substring and n is the length of suffix tree.
+                    </p>
+                </div>
+                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/suffixTree.c">Github Code »</a></span>
             </div>
 
             <div class="card">
@@ -85,7 +107,16 @@
                 <div class="card__body">
                     Used for full-text search to quickly find products containing specific keywords.
                 </div>
-                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/InvertedIndex.c">Implementation</a></span>
+                <div style="display:flex; justify-content:space-evenly; width:100%; font-weight: 600; font-size: 14px;">
+                    <p>Space Complexity: O(n+t)</p>
+                    <p>Time Complexity: O(n)</p>
+                </div>
+                <div>
+                    <p>
+                        where n is the number of documents and t is the total number of terms.
+                    </p>
+                </div>
+                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/InvertedIndex.c">Github Code »</a></span>
             </div>
 
             <div class="card">
@@ -94,7 +125,15 @@
                 <div class="card__body">
                     For efficiently managing and querying product inventory.
                 </div>
-                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/BST.c">Implementation</a></span>
+                <div style="display:flex; justify-content:space-evenly; width:100%; font-weight: 600; font-size: 14px;">
+                    <p>Space Complexity: O(n)</p>
+                    <p>Time Complexity: Olog(n) to O(n)</p>
+                </div>
+                    <div>
+                        <p>where
+                            n is the number of nodes in the tree.</p>
+                    </div>
+                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/BST.c">Github Code »</a></span>
             </div>
 
             <div class="card">
@@ -103,7 +142,17 @@
                 <div class="card__body">
                     For quick lookups of product information.
                 </div>
-                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/hashTable.c">Implementation</a></span>
+                <div style="display:flex; justify-content:space-evenly; width:100%; font-weight: 600; font-size: 14px;">
+                    <p>Space Complexity: O(n)</p>
+                    <p>Time Complexity: O(1) to O(n)</p>
+                </div>
+                    <div>
+                        <p>where 
+                            n is the number of elements stored in the hash table.
+                            
+                            </p>
+                    </div>
+                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/hashTable.c">Github Code »</a></span>
             </div>
 
             <div class="card">
@@ -112,7 +161,15 @@
                 <div class="card__body">
                     For managing load balancer routing tables.
                 </div>
-                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/redBlack.c">Implementation</a></span>
+                <div style="display:flex; justify-content:space-evenly; width:100%; font-weight: 600; font-size: 14px;">
+                    <p>Space Complexity: O(n)</p>
+                    <p>Time Complexity: Olog(n)</p>
+                </div>
+                <div>
+                    <p>where 
+                        n is the number of nodes in the tree.</p>
+                </div>
+                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/redBlack.c">Github Code »</a></span>
             </div>
 
             <div class="card">
@@ -121,7 +178,17 @@
                 <div class="card__body">
                     Maximizing profit based on weight (or cost) constraints, which can be used for optimizing shipping costs or packaging.
                 </div>
-                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/KnapSack.c">Implementation</a></span>
+                <div style="display:flex; justify-content:space-evenly; width:100%; font-weight: 600; font-size: 14px;">
+                    <p>Space Complexity: O(nW)</p>
+                    <p>Time Complexity: O(nW)</p>
+                </div>
+                <div>
+                    <p>where
+                        n is the number of items and
+                        W is the maximum weight capacity of the knapsack.
+                    </p>
+                </div>
+                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/KnapSack.c">Github Code »</a></span>
             </div>
 
             <div class="card">
@@ -130,7 +197,16 @@
                 <div class="card__body">
                     For segmenting customers based on behavior and demographics.
                 </div>
-                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/K-means.c">Implementation</a></span>
+                <div style="display:flex; justify-content:space-evenly; width:100%; font-weight: 600; font-size: 14px;">
+                    <p>Space Complexity: O(n.k)</p>
+                    <p>Time Complexity: O(n.k)</p>
+                </div>
+                <div>
+                    <p>
+                        where n is number of data points and k is the number of clusters. 
+                    </p>
+                </div>
+                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/K-means.c">Github Code »</a></span>
             </div>
 
             <div class="card">
@@ -139,7 +215,18 @@
                 <div class="card__body">
                     For predictive analytics and customer insights.
                 </div>
-                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/randomForest.c">Implementation</a></span>
+                <div style="display:flex; justify-content:space-evenly; width:100%; font-weight: 600; font-size: 14px;">
+                    <p>Space Complexity: O(m.n.d)</p>
+                    <p>Time Complexity: O(m.logn)</p>
+                </div>
+                <div>
+                    <p>where 
+                        m is the number of trees in the forest, 
+                        n is the number of training samples, and 
+                        d is the number of features.
+                    </p>
+                </div>
+                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/randomForest.c">Github Code »</a></span>
             </div>
 
             <div class="card">
@@ -148,7 +235,15 @@
                 <div class="card__body">
                     For optimizing delivery routes in logistics.
                 </div>
-                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/dijkstras.c">Implementation</a></span>
+                <div style="display:flex; justify-content:space-evenly; width:100%; font-weight: 600; font-size: 14px;">
+                    <p>Space Complexity: O(V)</p>
+                    <p>Time Complexity: O(V^2)</p>
+                </div>
+                <div>
+                    <p>where 
+                        V is the number of vertices in the graph.</p>
+                </div>
+                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/dijkstras.c">Github Code »</a></span>
             </div>
 
             <div class="card">
@@ -157,7 +252,15 @@
                 <div class="card__body">
                     Used in databases for efficient data indexing and retrieval.
                 </div>
-                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/B-Tree.c">Implementation</a></span>
+                <div style="display:flex; justify-content:space-evenly; width:100%; font-weight: 600; font-size: 14px;">
+                    <p>Space Complexity: O(n)</p>
+                    <p>Time Complexity: O(logn)</p>
+                </div>
+                <div>
+                    <p>where 
+                        n is the number of elements in the B-tree.</p>
+                </div>
+                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/B-Tree.c">Github Code »</a></span>
             </div>
 
             <div class="card">
@@ -166,7 +269,15 @@
                 <div class="card__body">
                     For distributing data across multiple database instances to ensure scalability.
                 </div>
-                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/sharding.c">Implementation</a></span>
+                <div style="display:flex; justify-content:space-evenly; width:100%; font-weight: 600; font-size: 14px;">
+                    <p>Space Complexity: O(n)</p>
+                    <p>Time Complexity: O(1)</p>
+                </div>
+                <div>
+                    <p>where 
+                        n is the total amount of data across all shards.</p>
+                </div>
+                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/sharding.c">Github Code »</a></span>
             </div>
 
             <div class="card">
@@ -175,7 +286,15 @@
                 <div class="card__body">
                     For processing orders based on priority rather than order of arrival.
                 </div>
-                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/priorityQueue.c">Implementation</a></span>
+                <div style="display:flex; justify-content:space-evenly; width:100%; font-weight: 600; font-size: 14px;">
+                    <p>Space Complexity: O(n)</p>
+                    <p>Time Complexity: O(logn)</p>
+                </div>
+                <div>
+                    <p>where 
+                        n is the number of elements in the heap.</p>
+                </div>
+                <span><a href="https://github.com/saurvkmr0/saurvkmr0.github.io/blob/main/priorityQueue.c">Github Code »</a></span>
             </div>
 
         </div>
@@ -211,7 +330,7 @@
 
     <footer>
         <div class="container">
-            <p>Peace 🤞</p>
+            <p>Shopify Portfolio</p>
         </div>
     </footer>
 </body>
